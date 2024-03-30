@@ -56,63 +56,52 @@ void SceneParser::ParseLight(const json& data, Scene& scene) {
 			scene.AddEnv(hdr_path);
 		}
 		else if (type == "quad") {
-// 			json pos_j = light.value("pos", json());
-// 			vec3 pos(pos_j.at(0), pos_j.at(1), pos_j.at(2));
-// 			cout << "pos: " << to_string(pos) << endl;
-// 
-// 			json u_j = light.value("u", json());
-// 			vec3 u(u_j.at(0), u_j.at(1), u_j.at(2));
-// 			cout << "u: " << to_string(u) << endl;
-// 
-// 			json v_j = light.value("v", json());
-// 			vec3 v(v_j.at(0), v_j.at(1), v_j.at(2));
-// 			cout << "v: " << to_string(v) << endl;
-// 
-// 			string material_name = light.value("material", "");
-// 			cout << "material: " << material_name << endl;
-// 
-// 			auto mat = SearchMaterial(material_name);
-// 
-// 			string medium_int_name = light.value("medium_int", "");
-// 			cout << "medium_int: " << medium_int_name << endl;
-// 
-// 			string medium_ext_name = light.value("medium_ext", "");
-// 			cout << "medium_ext: " << medium_ext_name << endl;
-// 
-// 			auto me_int = SearchMedium(medium_int_name);
-// 			auto me_ext = SearchMedium(medium_ext_name);
-// 
-// 			auto quad = new Quad(mat, pos, u, v, me_ext, me_int);
-// 			auto quad_light = make_shared<QuadLight>(quad);
-// 
-// 			lights.push_back(quad_light);
+			json pos_j = light.value("pos", json());
+			vec3f pos(pos_j.at(0), pos_j.at(1), pos_j.at(2));
+			cout << "pos: " << pos.x << "   " << pos.y << "   " << pos.z << "   " << endl;
+
+			json u_j = light.value("u", json());
+			vec3f u(u_j.at(0), u_j.at(1), u_j.at(2));
+			cout << "u: " << u.x << "   " << u.y << "   " << u.z << "   " << endl;
+
+			json v_j = light.value("v", json());
+			vec3f v(v_j.at(0), v_j.at(1), v_j.at(2));
+			cout << "v: " << v.x << "   " << v.y << "   " << v.z << "   " << endl;
+
+			json radiance_j = light.value("pos", json());
+			vec3f radiance(radiance_j.at(0), radiance_j.at(1), radiance_j.at(2));
+			cout << "radiance: " << radiance.x << "   " << radiance.y << "   " << radiance.z << "   " << endl;
+
+			Light light;
+			light.medium = -1;
+			light.type = LightType::Quad;
+			light.position = pos;
+			light.u = u;
+			light.v = v;
+			light.radiance = radiance;
+
+			scene.AddLight(light);
 		}
 		else if (type == "sphere") {
-// 			json center_j = light.value("center", json());
-// 			vec3 center(center_j.at(0), center_j.at(1), center_j.at(2));
-// 			cout << "center: " << to_string(center) << endl;
-// 
-// 			float radius = light.value("radius", 0.0f);
-// 			cout << "radius: " << radius << endl;
-// 
-// 			string material_name = light.value("material", "");
-// 			cout << "material: " << material_name << endl;
-// 
-// 			auto mat = SearchMaterial(material_name);
-// 
-// 			string medium_int_name = light.value("medium_int", "");
-// 			cout << "medium_int: " << medium_int_name << endl;
-// 
-// 			string medium_ext_name = light.value("medium_ext", "");
-// 			cout << "medium_ext: " << medium_ext_name << endl;
-// 
-// 			auto me_int = SearchMedium(medium_int_name);
-// 			auto me_ext = SearchMedium(medium_ext_name);
-// 
-// 			auto sphere = new Sphere(mat, center, radius, me_ext, me_int);
-// 			auto sphere_light = make_shared<SphereLight>(sphere);
-// 
-// 			lights.push_back(sphere_light);
+			json center_j = light.value("center", json());
+			vec3f center(center_j.at(0), center_j.at(1), center_j.at(2));
+			cout << "center: " << center.x << "   " << center.y << "   " << center.z << "   " << endl;
+
+			float radius = light.value("radius", 0.0f);
+			cout << "radius: " << radius << endl;
+
+			json radiance_j = light.value("pos", json());
+			vec3f radiance(radiance_j.at(0), radiance_j.at(1), radiance_j.at(2));
+			cout << "radiance: " << radiance.x << "   " << radiance.y << "   " << radiance.z << "   " << endl;
+
+			Light light;
+			light.medium = -1;
+			light.type = LightType::Sphere;
+			light.position = center;
+			light.radius = radius;
+			light.radiance = radiance;
+
+			scene.AddLight(light);
 		}
 
 		cout << endl;
