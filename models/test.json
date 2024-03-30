@@ -9,8 +9,7 @@
     "light": [
         {
             "type": "infinite",
-            "hdr_path": "scene/test/hdr/spruit_sunrise_4k.hdr",
-            "scale": 1
+            "hdr_path": "../../models/spaichingen_hill_4k.hdr"
         }
     ],
     "shape": [

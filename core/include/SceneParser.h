@@ -51,6 +51,7 @@ public:
 	void LoadFromJson(const string& fn, Scene& scene, bool& is_succeed);
 	void Parse(const json& data, Scene& scene);
 	void ParseCamera(const json& data);
+	void ParseLight(const json& data, Scene& scene);
 
 public:
 	int width, height, depth;
