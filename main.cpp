@@ -7,11 +7,11 @@
 #include "3rdParty/stb_image_write.h"
 
 struct MyWindow : public GLFCameraWindow {
-	MyWindow(const std::string& title, const Scene* scene, const Camera& camera, const float worldScale, const SceneParser parser)
-		: GLFCameraWindow(title, camera.from, camera.at, camera.up, worldScale, parser.width, parser.height),
+	MyWindow(const std::string& title, const Scene* scene, const float worldScale, const SceneParser& parser)
+		: GLFCameraWindow(title, parser.camera.from, parser.camera.at, parser.camera.up, worldScale, parser.width, parser.height),
 		renderer(scene) {
-		renderer.SetCamera(camera);
-		camera_medium = camera.medium;
+		renderer.SetCamera(parser.camera);
+		camera_medium = parser.camera.medium;
 		change_camera = false;
 	}
 
@@ -244,15 +244,12 @@ extern "C" int main(int ac, char** av) {
 		SceneParser parser;
 		bool is_succeed;
 		parser.LoadFromJson("../../models/test.json", scene, is_succeed);
+		parser.camera.medium = -1;
+		parser.camera.at = scene.bounds.center();
 
-		MyWindow* window = new MyWindow("OptiXRender", &scene, camera, worldScale, parser);
-		//      window->enableFlyMode();
+		MyWindow* window = new MyWindow("OptiXRender", &scene, worldScale, parser);
+//      window->enableFlyMode();
 		window->enableInspectMode();
-
-// 		std::cout << "Press 'a' to enable/disable accumulation/progressive refinement" << std::endl;
-// 		std::cout << "Press ' ' to enable/disable denoising" << std::endl;
-// 		std::cout << "Press ',' to reduce the number of paths/pixel" << std::endl;
-// 		std::cout << "Press '.' to increase the number of paths/pixel" << std::endl;
 		window->run();
 
 	}

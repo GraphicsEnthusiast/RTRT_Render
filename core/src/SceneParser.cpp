@@ -18,29 +18,24 @@ void SceneParser::Parse(const json& data, Scene& scene) {
 	cout << "height: " << height << endl;
 	cout << "depth: " << depth << endl;
 
- 	json filterData = data.value("filter", json());
- 	ParseFilter(filterData);
+	json cameraData = data.value("camera", json());
+	ParseCamera(cameraData);
 }
 
-void SceneParser::ParseFilter(const json& data) {
-	cout << "Filter Information: " << endl;
-	string filterType = data.value("type", "gaussian");
+void SceneParser::ParseCamera(const json& data) {
+	cout << "Camera Information: " << endl;
 
-	cout << "type: " << filterType << endl << endl;
+// 	string medium_name = data.value("medium", "");
+// 	cout << "medium: " << medium_name << endl;
+// 	auto me = SearchMedium(medium_name);
 
-	if (filterType == "gaussian") {
-		filterType = FilterType::Gaussian;
-	}
-	else if (filterType == "triangle") {
-		filterType = FilterType::Triangle;
-	}
-	else if (filterType == "tent") {
-		filterType = FilterType::Tent;
-	}
-	else if (filterType == "box") {
-		filterType = FilterType::Box;
-	}
-	else {
-		filterType = FilterType::Gaussian;
-	}
+	json look_from_j = data.value("look_from", json());
+	vec3f look_from(look_from_j.at(0), look_from_j.at(1), look_from_j.at(2));
+	cout << "look_from: " << look_from.x << "   " << look_from.y << "   " << look_from.z << "   " << endl;
+	camera.from = look_from;
+
+	json up_j = data.value("up", json());
+	vec3f up(up_j.at(0), up_j.at(1), up_j.at(2));
+	cout << "up: " << up.x << "   " << up.y << "   " << up.z << "   " << endl;
+	camera.up = up;
 }

@@ -50,9 +50,10 @@ public:
 
 	void LoadFromJson(const string& fn, Scene& scene, bool& is_succeed);
 	void Parse(const json& data, Scene& scene);
-	void ParseFilter(const json& data);
+	void ParseCamera(const json& data);
 
 public:
 	int width, height, depth;
 	FilterType filterType;
+	Camera camera;
 };
