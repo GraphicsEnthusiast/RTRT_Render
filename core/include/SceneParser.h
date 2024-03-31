@@ -5,6 +5,7 @@
 #include <fstream>
 #include <vector>
 #include <sstream>
+#include <map>
 #include <nlohmann/json.hpp>
 
 using namespace std;
@@ -52,9 +53,12 @@ public:
 	void Parse(const json& data, Scene& scene);
 	void ParseCamera(const json& data);
 	void ParseLight(const json& data, Scene& scene);
+	void ParseMesh(const json& data, Scene& scene);
+	void ParseMaterial(const json& data, Scene& scene);
 
 public:
 	int width, height, depth;
 	FilterType filterType;
 	Camera camera;
+	map<string, Material> materialTable;
 };

@@ -215,11 +215,6 @@ extern "C" int main(int ac, char** av) {
 			textureFile,
 			-1, -1
 		);
-		//scene.AddEnv("../../models/spaichingen_hill_4k.hdr");
-		Camera camera = { /*from*/vec3f(0.2f, 0.2f, 0.2f),
-			/* at */scene.bounds.center(),
-			/* up */vec3f(0.f,1.f,0.f) };
-		camera.medium = -1;
 
 		// something approximating the scale of the world, so the
 		// camera knows how much to move for any given user interaction:

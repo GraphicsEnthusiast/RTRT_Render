@@ -23,6 +23,9 @@ void SceneParser::Parse(const json& data, Scene& scene) {
 
 	json lightData = data.value("light", json());
 	ParseLight(lightData, scene);
+
+	json meshData = data.value("mesh", json());
+	ParseMesh(meshData, scene);
 }
 
 void SceneParser::ParseCamera(const json& data) {
@@ -42,7 +45,7 @@ void SceneParser::ParseCamera(const json& data) {
 }
 
 void SceneParser::ParseLight(const json& data, Scene& scene) {
-	cout << "Lights Information: " << endl;
+	cout << "Light Information: " << endl;
 	int i = 0;
 	for (auto iter = data.cbegin(); iter != data.cend(); ++iter) {
 		json light = data.at(i);
@@ -107,4 +110,39 @@ void SceneParser::ParseLight(const json& data, Scene& scene) {
 		cout << endl;
 		i++;
 	}
+}
+
+void SceneParser::ParseMesh(const json& data, Scene& scene) {
+	cout << "Mesh Information: " << endl;
+	int i = 0;
+	for (auto iter = data.cbegin(); iter != data.cend(); ++iter) {
+		json mesh = data.at(i);
+
+		string mesh_path = mesh.value("mesh_path", "");
+		cout << "mesh_path: " << mesh_path << endl;
+
+		string material_name = mesh.value("material", "");
+		cout << "material: " << material_name << endl;
+
+		string medium_int_name = mesh.value("medium_int", "");
+		cout << "medium_int: " << medium_int_name << endl;
+
+		string medium_ext_name = mesh.value("medium_ext", "");
+		cout << "medium_ext: " << medium_ext_name << endl;
+
+// 		auto me_int = SearchMedium(medium_int_name);
+// 		auto me_ext = SearchMedium(medium_ext_name);
+// 		auto mat = SearchMaterial(material_name);
+// 
+// 		auto mesh = new TriangleMesh(mat, mesh_path, model_tran, me_ext, me_int);
+// 
+// 		shapes.push_back(mesh);
+
+		cout << endl;
+		i++;
+	}
+}
+
+void SceneParser::ParseMaterial(const json& data, Scene& scene) {
+
 }

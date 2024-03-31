@@ -12,48 +12,12 @@
             "hdr_path": "../../models/spaichingen_hill_4k.hdr"
         }
     ],
-    "shape": [
+    "mesh": [
         {
-            "type": "mesh",
             "mesh_path": "scene/test/model/teapot.obj",
-            "translate": [ 0, 0, 0 ],
-            "rotate": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ],
-            "material": "die1"
-        },
-        {
-            "type": "mesh",
-            "mesh_path": "scene/test/model/fluid.obj",
-            "translate": [ 0, 0, 0 ],
-            "rotate": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ],
-            "material": "die2",
-            "medium_int": "fluid"
-        },
-        {
-            "type": "mesh",
-            "mesh_path": "scene/test/model/clock.obj",
-            "translate": [ 0, 0, 0 ],
-            "rotate": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ],
-            "material": "clock"
-        },
-        {
-            "type": "mesh",
-            "mesh_path": "scene/test/model/dragon.obj",
-            "translate": [ 0, 0, 0 ],
-            "rotate": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ],
-            "material": "die2",
-            "medium_int": "cream"
-        },
-        {
-            "type": "mesh",
-            "mesh_path": "scene/test/model/plane.obj",
-            "translate": [ 0, 0, 0 ],
-            "rotate": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ],
-            "material": "dif"
+            "material": "die1",
+            "medium_int": "fluid",
+            "medium_ext": "fluid"
         }
     ],
     "material": [
@@ -80,20 +44,6 @@
             "anisotropy": 0.0,
             "int_ior": 1.5,
             "ext_ior": 1.0
-        },
-        {
-            "type": "smooth_dielectric",
-            "name": "die2",
-            "albedo_texture_type": "constant",
-            "albedo": [ 1.0, 1.0, 1.0 ],
-            "int_ior": 1.33,
-            "ext_ior": 1.0
-        },
-        {
-            "type": "smooth_diffuse",
-            "name": "dif",
-            "albedo_texture_type": "constant",
-            "albedo": [ 0.7, 0.7, 0.7 ]
         }
     ],
     "medium": [
