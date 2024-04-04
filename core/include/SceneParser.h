@@ -51,14 +51,19 @@ public:
 
 	void LoadFromJson(const string& fn, Scene& scene, bool& is_succeed);
 	void Parse(const json& data, Scene& scene);
-	void ParseCamera(const json& data);
+	void ParseCamera(const json& data, Scene& scene);
 	void ParseLight(const json& data, Scene& scene);
 	void ParseMesh(const json& data, Scene& scene);
 	void ParseMaterial(const json& data, Scene& scene);
+	void ParseMedium(const json& data, Scene& scene);
 
 public:
 	int width, height, depth;
 	FilterType filterType;
 	Camera camera;
-	map<string, Material> materialTable;
+	unordered_map<string, pair<TextureFile, Material>> materialTable;
+	unordered_map<string, int> mediumTable;
+	// something approximating the scale of the world, so the
+	// camera knows how much to move for any given user interaction:
+	float worldScale;
 };

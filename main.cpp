@@ -7,8 +7,8 @@
 #include "3rdParty/stb_image_write.h"
 
 struct MyWindow : public GLFCameraWindow {
-	MyWindow(const std::string& title, const Scene* scene, const float worldScale, const SceneParser& parser)
-		: GLFCameraWindow(title, parser.camera.from, parser.camera.at, parser.camera.up, worldScale, parser.width, parser.height),
+	MyWindow(const std::string& title, const Scene* scene, const SceneParser& parser)
+		: GLFCameraWindow(title, parser.camera.from, parser.camera.at, parser.camera.up, parser.worldScale, parser.width, parser.height),
 		renderer(scene) {
 		renderer.SetCamera(parser.camera);
 		camera_medium = parser.camera.medium;
@@ -163,90 +163,32 @@ struct MyWindow : public GLFCameraWindow {
 };
 
 extern "C" int main(int ac, char** av) {
-	TextureFile textureFile;
-	Material material;
-	Medium m;
-	textureFile.albedoFile = "../../models/01_Head_Base_Color.png";
-	textureFile.roughnessFile = "../../models/01_Head_Roughness.png";
-	textureFile.metallicFile = "../../models/01_Head_Metallic.png";
-	textureFile.normalFile = "../../models/01_Head_Normal_DirectX.png";
 	try {
+// 		Light light;
+// 		light.medium = -1;
+// 		light.position = vec3f(0.5f, 0.25f, 0.0f);
+// 		light.radius = 0.1f;
+// 		light.radiance = vec3f(15.0f);
+// 		scene.AddLight(light);
+// 
+// 		light.position = vec3f(1.0f, 0.5f, 0.0f);
+// 		light.radius = 0.08f;
+// 		light.radiance = vec3f(0.0f, 15.0f, 0.0f);
+// 		scene.AddLight(light);
+// 
+// 		light.position = vec3f(-0.5f, 0.25f, 0.0f);
+// 		light.radius = 0.1f;
+// 		light.radiance = vec3f(15.0f, 0.0f, 0.0f);
+// 		scene.AddLight(light);
 		Scene scene;
-		scene.AddMedium(m);
-		scene.AddMesh(
-			"../../models/head.obj",
-			material,
-			textureFile,
-			-1, -1
-		);
-		textureFile.albedoFile = "../../models/02_Body_Base_Color.png";
-		textureFile.roughnessFile = "../../models/02_Body_Roughness.png";
-		textureFile.metallicFile = "../../models/02_Body_Metallic.png";
-		textureFile.normalFile = "../../models/02_Body_Normal_DirectX.png";
-
-		Material m;
-		m.type = MaterialType::Dielectric;
-		//m.roughness = 0.5f;
-		TextureFile t;
-		scene.AddMesh(
-			"../../models/body.obj",
-			m,
-			t,
-			-1, 0
-		);
-		textureFile.albedoFile = "../../models/03_Base_Base_Color.png";
-		textureFile.metallicFile = "../../models/03_Base_Metallic.png";
-		textureFile.roughnessFile = "../../models/03_Base_Roughness.png";
-		textureFile.normalFile = "../../models/03_Base_Normal_DirectX.png";
-		scene.AddMesh(
-			"../../models/base.obj",
-			material,
-			textureFile,
-			-1, -1
-		);
-		material = Material();
-		material.type = MaterialType::Diffuse;
-		textureFile.albedoFile = "../../models/grid.jpg";
-		textureFile.roughnessFile = "../../models/rusty_metal_sheet_rough_1k.png";
-		textureFile.normalFile = "";
-		scene.AddMesh(
-			"../../models/plane.obj",
-			material,
-			textureFile,
-			-1, -1
-		);
-
-		// something approximating the scale of the world, so the
-		// camera knows how much to move for any given user interaction:
-		const float worldScale = length(scene.bounds.span());
-		Light light;
-		light.medium = -1;
-		light.position = vec3f(0.5f, 0.25f, 0.0f);
-		light.radius = 0.1f;
-		light.radiance = vec3f(15.0f);
-		//scene.AddLight(light);
-
-		light.position = vec3f(1.0f, 0.5f, 0.0f);
-		light.radius = 0.08f;
-		light.radiance = vec3f(0.0f, 15.0f, 0.0f);
-		//scene.AddLight(light);
-
-		light.position = vec3f(-0.5f, 0.25f, 0.0f);
-		light.radius = 0.1f;
-		light.radiance = vec3f(15.0f, 0.0f, 0.0f);
-		//scene.AddLight(light);
-
 		SceneParser parser;
 		bool is_succeed;
 		parser.LoadFromJson("../../models/test.json", scene, is_succeed);
-		parser.camera.medium = -1;
-		parser.camera.at = scene.bounds.center();
 
-		MyWindow* window = new MyWindow("OptiXRender", &scene, worldScale, parser);
+		MyWindow* window = new MyWindow("OptiXRender", &scene, parser);
 //      window->enableFlyMode();
 		window->enableInspectMode();
 		window->run();
-
 	}
 	catch (std::runtime_error& e) {
 		std::cout << GDT_TERMINAL_RED << "FATAL ERROR: " << e.what()

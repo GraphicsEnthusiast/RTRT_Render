@@ -79,3 +79,10 @@ target_link_libraries(OptiXRender
   ${OPENGL_gl_LIBRARY}
   PostProcessing
 )
+
+set(TARGET_NAME OptiXRender)
+
+add_custom_command(TARGET ${TARGET_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+    ${CMAKE_CURRENT_SOURCE_DIR}/imgui.ini $<TARGET_FILE_DIR:${TARGET_NAME}>/imgui.ini
+)
