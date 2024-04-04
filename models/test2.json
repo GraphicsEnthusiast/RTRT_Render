@@ -22,7 +22,7 @@
         {
             "mesh_path": "../models/body.obj",
             "material": "body",
-            "medium_int": "skin",
+            "medium_int": "",
             "medium_ext": ""
         },
         {

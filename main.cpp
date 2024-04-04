@@ -5,6 +5,12 @@
 #include <GL/gl.h>
 #include "SceneParser.h"
 #include "3rdParty/stb_image_write.h"
+#include <windows.h>
+#include <commdlg.h>
+#define GLFW_EXPOSE_NATIVE_WIN32
+#define GLFW_EXPOSE_NATIVE_WGL
+#define GLFW_NATIVE_INCLUDE_NONE
+#include <GLFW/glfw3native.h>
 
 struct MyWindow : public GLFCameraWindow {
 	MyWindow(const std::string& title, const Scene* scene, const SceneParser& parser)
@@ -13,6 +19,7 @@ struct MyWindow : public GLFCameraWindow {
 		renderer.SetCamera(parser.camera);
 		camera_medium = parser.camera.medium;
 		change_camera = false;
+		this->parser = parser;
 	}
 
 	virtual void render() override {
@@ -78,6 +85,41 @@ struct MyWindow : public GLFCameraWindow {
 				if (ImGui::BeginMenu("File")) {
 					if (ImGui::MenuItem("Open Scene")) {
 						
+						TCHAR fileName[256] = { 0 };
+						OPENFILENAME ofn = { 0 };
+
+						ofn.lStructSize = sizeof(ofn);
+						ofn.hwndOwner = glfwGetWin32Window(handle);
+						ofn.lpstrFile = fileName;
+						ofn.nMaxFile = sizeof(fileName);
+						ofn.lpstrFilter = TEXT("All Files\0*.json\0");
+						ofn.nFilterIndex = 1;
+						ofn.lpstrInitialDir = nullptr;
+						ofn.lpstrFileTitle = nullptr;
+						ofn.Flags = OFN_PATHMUSTEXIST | OFN_FILEMUSTEXIST | OFN_NOCHANGEDIR;
+
+						if (GetOpenFileName(&ofn) == true) {
+							string path = fileName;
+							Scene scene;
+							bool is_succeed;
+							parser.LoadFromJson(path, scene, is_succeed);
+							if (!is_succeed) {
+								cout << "File path error!" << endl;
+								exit(1);
+							}
+							cameraFrame.motionSpeed = parser.worldScale;
+							cameraFrame.setOrientation(parser.camera.from, parser.camera.at, parser.camera.up);
+							this->m_width = parser.width;
+							this->m_height = parser.height;
+							renderer = Renderer(&scene);
+							renderer.SetCamera(parser.camera);
+							camera_medium = parser.camera.medium;
+							change_camera = false;
+
+							int width, height;
+							glfwGetFramebufferSize(handle, &width, &height);
+							resize(vec2i(width, height));
+						}
 					}
 					if (ImGui::MenuItem("Save Image")) {
 						stbi_flip_vertically_on_write(true);
@@ -107,6 +149,8 @@ struct MyWindow : public GLFCameraWindow {
 			ImGui::Image((void*)(intptr_t)fbTexture, ImVec2(fbSize.x, fbSize.y), ImVec2(0, 1), ImVec2(1, 0));
 			ImGui::End();
 
+			ImGui::EndFrame();
+
 			// Rendering
 			ImGui::Render();
 
@@ -132,34 +176,13 @@ struct MyWindow : public GLFCameraWindow {
 		renderer.Resize(newSize);
 		pixels.resize(newSize.x * newSize.y);
 	}
-	virtual void key(int key, int mods) {
-		if (key == 'D' || key == 'd') {
-			renderer.denoiserOn = !renderer.denoiserOn;
-			std::cout << "denoising now " << (renderer.denoiserOn ? "ON" : "OFF") << std::endl;
-		}
-		if (key == 'A' || key == 'a') {
-			renderer.progressive = !renderer.progressive;
-			std::cout << "accumulation/progressive refinement now " << (renderer.progressive ? "ON" : "OFF") << std::endl;
-		}
-		if (key == ',') {
-			renderer.launchParams.numPixelSamples
-				= std::max(1, renderer.launchParams.numPixelSamples - 1);
-			std::cout << "num samples/pixel now "
-				<< renderer.launchParams.numPixelSamples << std::endl;
-		}
-		if (key == '.') {
-			renderer.launchParams.numPixelSamples
-				= std::max(1, renderer.launchParams.numPixelSamples + 1);
-			std::cout << "num samples/pixel now "
-				<< renderer.launchParams.numPixelSamples << std::endl;
-		}
-	}
 
 	vec2i fbSize;
 	GLuint fbTexture{ 0 };
 	Renderer renderer;
 	std::vector<uint32_t> pixels;
 	int camera_medium;
+	SceneParser parser;
 };
 
 extern "C" int main(int ac, char** av) {
@@ -183,7 +206,11 @@ extern "C" int main(int ac, char** av) {
 		Scene scene;
 		SceneParser parser;
 		bool is_succeed;
-		parser.LoadFromJson("../../models/test.json", scene, is_succeed);
+		parser.LoadFromJson("../models/test.json", scene, is_succeed);
+		if (!is_succeed) {
+			cout << "File path error!" << endl;
+			exit(1);
+		}
 
 		MyWindow* window = new MyWindow("OptiXRender", &scene, parser);
 //      window->enableFlyMode();
