@@ -9,30 +9,30 @@
     "light": [
         {
             "type": "infinite",
-            "hdr_path": "../models/spaichingen_hill_4k.hdr"
+            "hdr_path": "../../models/spaichingen_hill_4k.hdr"
         }
     ],
     "mesh": [
         {
-            "mesh_path": "../models/head.obj",
+            "mesh_path": "../../models/head.obj",
             "material": "head",
             "medium_int": "",
             "medium_ext": ""
         },
         {
-            "mesh_path": "../models/body.obj",
+            "mesh_path": "../../models/body.obj",
             "material": "body",
             "medium_int": "",
             "medium_ext": ""
         },
         {
-            "mesh_path": "../models/base.obj",
+            "mesh_path": "../../models/base.obj",
             "material": "base",
             "medium_int": "",
             "medium_ext": ""
         },
         {
-            "mesh_path": "../models/plane.obj",
+            "mesh_path": "../../models/plane.obj",
             "material": "plane",
             "medium_int": "",
             "medium_ext": ""
@@ -43,21 +43,21 @@
             "type": "diffuse",
             "name": "plane",
             "albedo_texture_type": "image",
-            "albedo_path": "../models/grid.jpg",
+            "albedo_path": "../../models/grid.jpg",
             "roughness_texture_type": "image",
-            "roughness_path": "../models/rusty_metal_sheet_rough_1k.png"
+            "roughness_path": "../../models/rusty_metal_sheet_rough_1k.png"
         },
         {
             "type": "metal_workflow",
             "name": "head",
             "metallic_texture_type": "image",
-            "metallic_path": "../models/01_Head_Metallic.png",
+            "metallic_path": "../../models/01_Head_Metallic.png",
             "roughness_texture_type": "image",
-            "roughness_path": "../models/01_Head_Roughness.png",
+            "roughness_path": "../../models/01_Head_Roughness.png",
             "albedo_texture_type": "image",
-            "albedo_path": "../models/01_Head_Base_Color.png",
+            "albedo_path": "../../models/01_Head_Base_Color.png",
             "normal_texture_type": "image",
-            "normal_path": "../models/01_Head_Normal_DirectX.png"
+            "normal_path": "../../models/01_Head_Normal_DirectX.png"
         },
         {
             "type": "thin_dielectric",
@@ -75,23 +75,13 @@
             "type": "metal_workflow",
             "name": "base",
             "metallic_texture_type": "image",
-            "metallic_path": "../models/03_Base_Metallic.png",
+            "metallic_path": "../../models/03_Base_Metallic.png",
             "roughness_texture_type": "image",
-            "roughness_path": "../models/03_Base_Roughness.png",
+            "roughness_path": "../../models/03_Base_Roughness.png",
             "albedo_texture_type": "image",
-            "albedo_path": "../models/03_Base_Base_Color.png",
+            "albedo_path": "../../models/03_Base_Base_Color.png",
             "normal_texture_type": "image",
-            "normal_path": "../models/03_Base_Normal_DirectX.png"
-        }
-    ],
-    "medium": [
-        {
-            "type": "homogeneous",
-            "name": "skin",
-            "phase": "isotropic",
-            "sigma_a": [ 0.032, 0.17, 0.48 ],
-            "sigma_s": [ 0.74, 0.88, 1.01 ],
-            "scale": 500
+            "normal_path": "../../models/03_Base_Normal_DirectX.png"
         }
     ]
 }
