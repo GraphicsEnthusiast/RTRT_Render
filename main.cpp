@@ -206,7 +206,7 @@ extern "C" int main(int ac, char** av) {
 		Scene scene;
 		SceneParser parser;
 		bool is_succeed;
-		parser.LoadFromJson("../../models/test.json", scene, is_succeed);
+		parser.LoadFromJson("../../scene/test/test.json", scene, is_succeed);
 		if (!is_succeed) {
 			cout << "File path error!" << endl;
 			exit(1);

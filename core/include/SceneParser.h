@@ -58,7 +58,7 @@ public:
 	void ParseMedium(const json& data, Scene& scene);
 
 public:
-	int width, height, depth;
+	int width, height;
 	FilterType filterType;
 	Camera camera;
 	unordered_map<string, pair<TextureFile, Material>> materialTable;

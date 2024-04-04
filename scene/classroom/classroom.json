@@ -1,0 +1,396 @@
+{
+    "width": 1280,
+    "height": 720,
+    "camera": {
+        "look_from": [ 2, 2, 2 ],
+        "up": [ 0, 1, 0 ]
+    },
+    "light": [
+        {
+            "type": "infinite",
+            "hdr_path": "../../scene/classroom/texture/spruit_sunrise_4k.hdr"
+        }
+    ],
+    "mesh": [
+        {
+            "mesh_path": "../../scene/classroom/model/Black.obj",
+            "material": "Black",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Box.obj",
+            "material": "Box",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/CeilingLight.obj",
+            "material": "CeilingLight",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/ChairFrame.obj",
+            "material": "ChairFrame",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/ChairStainless.obj",
+            "material": "ChairStainless",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/ChairWood.obj",
+            "material": "ChairWood",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/ChalkHolder.obj",
+            "material": "ChalkHolder",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/FlagBase.obj",
+            "material": "FlagBase",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/FlagRed.obj",
+            "material": "FlagRed",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/FlagWhite.obj",
+            "material": "FlagWhite",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Floor.obj",
+            "material": "Floor",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/FluorescentTube.obj",
+            "material": "Gray",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/FoamEraser.obj",
+            "material": "Gray",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Hallway.obj",
+            "material": "Hallway",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Lectern.obj",
+            "material": "Lectern",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Other.obj",
+            "material": "Black",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Pencil.obj",
+            "material": "Pencil",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Projector.obj",
+            "material": "Black",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Projector2.obj",
+            "material": "Black",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/ProjectorScreen.obj",
+            "material": "FlagWhite",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Rubber.obj",
+            "material": "Black",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/ScreenEnds.obj",
+            "material": "Black",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Speakers.obj",
+            "material": "Black",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/StickyNote.obj",
+            "material": "Gray",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Wall.obj",
+            "material": "Wall",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Walls.obj",
+            "material": "Walls",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Whiteboard.obj",
+            "material": "FlagWhite",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Whiteboard2.obj",
+            "material": "White2",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/Whiteboard3.obj",
+            "material": "White2",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/WhiteboardFrame.obj",
+            "material": "Black",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/WindowFrame.obj",
+            "material": "ChairFrame",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/classroom/model/WoodFrame.obj",
+            "material": "WoodFrame",
+            "medium_int": "",
+            "medium_ext": ""
+        }
+    ],
+    "material": [
+        {
+            "type": "diffuse",
+            "name": "Black",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.3, 0.28, 0.33 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.4
+        },
+        {
+            "type": "diffuse",
+            "name": "Box",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.8, 0.791642, 0.388399 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.3
+        },
+        {
+            "type": "dielectric",
+            "name": "CeilingLight",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.647814, 0.647814, 0.647814 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0
+        },
+        {
+            "type": "conductor",
+            "name": "ChairFrame",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.751534, 0.751534, 0.751534 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.25,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "eta": [ 1.65746, 0.880369, 0.521229 ],
+            "k": [ 9.22387, 6.26952, 4.837 ]
+        },
+        {
+            "type": "conductor",
+            "name": "ChairStainless",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.751534, 0.751534, 0.751534 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "eta": [ 1.65746, 0.880369, 0.521229 ],
+            "k": [ 9.22387, 6.26952, 4.837 ]
+        },
+        {
+            "type": "plastic",
+            "name": "ChairWood",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/classroom/texture/wood2.jpg",
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.25,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "White2",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.9, 0.9, 0.9 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "diffuse",
+            "name": "ChalkHolder",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.8, 0.644901, 0.412119 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "diffuse",
+            "name": "FlagBase",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.779661, 0.653162, 0.349188 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "diffuse",
+            "name": "FlagRed",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.8, 0.008214, 0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "diffuse",
+            "name": "FlagWhite",
+            "albedo_texture_type": "constant",
+            "albedo": [ 1, 1, 1 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "diffuse",
+            "name": "Floor",
+            "albedo_texture_type": "constant",
+            "albedo": [ 1, 1, 1 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "diffuse",
+            "name": "Gray",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.612066, 0.612066, 0.612066 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "diffuse",
+            "name": "Walls",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.654071, 0.67408, 0.8 ],
+            "roughness_texture_type": "image",
+            "roughness_path": "../../scene/classroom/texture/rusty_metal_sheet_rough_1k.png"
+        },
+        {
+            "type": "diffuse",
+            "name": "WoodFrame",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/classroom/texture/blackboard.jpg",
+            "roughness_texture_type": "image",
+            "roughness_path": "../../scene/classroom/texture/rusty_metal_sheet_rough_1k.png"
+        },
+        {
+            "type": "diffuse",
+            "name": "Lectern",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/classroom/texture/wood1.jpg",
+            "roughness_texture_type": "constant",
+            "roughness": 0.15
+        },
+        {
+            "type": "diffuse",
+            "name": "Wall",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.450837, 0.453663, 0.499605 ],
+            "roughness_texture_type": "image",
+            "roughness_path": "../../scene/classroom/texture/rusty_metal_sheet_rough_1k.png"
+        },
+        {
+            "type": "diffuse",
+            "name": "Hallway",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.784314, 0.784314, 0.784314 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "diffuse",
+            "name": "FlagWhite",
+            "albedo_texture_type": "constant",
+            "albedo": [ 1, 1, 1 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "diffuse",
+            "name": "Pencil",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.145676, 0.64, 0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        }
+    ]
+}

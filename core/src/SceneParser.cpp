@@ -11,12 +11,10 @@ void SceneParser::LoadFromJson(const string& fn, Scene& scene, bool& is_succeed)
 void SceneParser::Parse(const json& data, Scene& scene) {
 	width = data.value("width", 1024);
 	height = data.value("height", 1024);
-	depth = data.value("depth", 4);
 
 	cout << "Settings Information: " << endl;
 	cout << "width: " << width << endl;
 	cout << "height: " << height << endl;
-	cout << "depth: " << depth << endl;
 
 	json lightData = data.value("light", json());
 	ParseLight(lightData, scene);
