@@ -60,7 +60,6 @@ struct GLFWindow {
     GLFWwindow* handle{ nullptr };
     ImGuiIO* io;
     bool change_camera;
-    int m_width, m_height;
 };
 
 

@@ -109,16 +109,11 @@ struct MyWindow : public GLFCameraWindow {
 							}
 							cameraFrame.motionSpeed = parser.worldScale;
 							cameraFrame.setOrientation(parser.camera.from, parser.camera.at, parser.camera.up);
-							this->m_width = parser.width;
-							this->m_height = parser.height;
 							renderer = Renderer(&scene);
 							renderer.SetCamera(parser.camera);
 							camera_medium = parser.camera.medium;
 							change_camera = false;
-
-							int width, height;
-							glfwGetFramebufferSize(handle, &width, &height);
-							resize(vec2i(width, height));
+							resize(vec2i(parser.width, parser.height));
 						}
 					}
 					if (ImGui::MenuItem("Save Image")) {
