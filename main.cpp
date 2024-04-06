@@ -69,7 +69,6 @@ struct MyWindow : public GLFCameraWindow {
 		glfwSetCursorPosCallback(handle, glfwindow_mouseMotion_cb);
 
 		bool my_tool_active = true;
-		int frameCounter = 0;
 
 		while (!glfwWindowShouldClose(handle)) {
 			render();
@@ -116,13 +115,12 @@ struct MyWindow : public GLFCameraWindow {
 							camera_medium = parser.camera.medium;
 							change_camera = false;
 							resize(vec2i(parser.width, parser.height));
-							frameCounter = 0;
 						}
 					}
 					if (ImGui::MenuItem("Save Image")) {
 						stbi_flip_vertically_on_write(true);
 						stbi_write_png("image.png", fbSize.x, fbSize.y, 4, pixels.data(), 0);
-						std::cout << "save image" << std::endl;
+						std::cout << "Save image." << std::endl;
 					}
 					ImGui::EndMenu();
 				}
@@ -144,10 +142,7 @@ struct MyWindow : public GLFCameraWindow {
 				}
 			}
 			ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io->Framerate, io->Framerate); ImGui::SameLine();
-			ImGui::Text("SPP: %ld", frameCounter);
-			if (renderer.progressive) {
-				frameCounter += renderer.launchParams.numPixelSamples;
-			}
+			ImGui::Text("SPP: %ld", renderer.launchParams.frame.frameID);
 			ImGui::Image((void*)(intptr_t)fbTexture, ImVec2(fbSize.x, fbSize.y), ImVec2(0, 1), ImVec2(1, 0));
 			ImGui::End();
 
