@@ -1,4 +1,6 @@
 ﻿# OptiXRender
+
+ This project is designed to meet the requirements of my undergraduate graduation project, and it is written very casually. If I have time in the future, I will rewrite all of it.
  
 ![QQ截图20240406114721](https://github.com/GraphicsEnthusiast/OptiXRender/assets/75780167/1bebb740-e389-44c5-b97c-8cb2cb4afb38)
 
