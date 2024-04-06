@@ -1,4 +1,6 @@
 ﻿# OptiXRender
+ 
+![QQ截图20240406114721](https://github.com/GraphicsEnthusiast/OptiXRender/assets/75780167/1bebb740-e389-44c5-b97c-8cb2cb4afb38)
 
  ![QQ截图20240406000030](https://github.com/GraphicsEnthusiast/OptiXRender/assets/75780167/d0106c5d-1fbc-4a49-83f3-7bf5ac0f2f75)
 
