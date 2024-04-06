@@ -726,7 +726,7 @@
             "type": "dielectric",
             "name": "MicrowaveGlass",
             "albedo_texture_type": "constant",
-            "albedo": [ 0.2, 0.2, 0.2 ],
+            "albedo": [ 0.9, 0.9, 0.9 ],
             "roughness_texture_type": "constant",
             "roughness": 0.1,
             "anisotropy_texture_type": "constant",

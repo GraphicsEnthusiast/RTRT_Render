@@ -69,6 +69,7 @@ struct MyWindow : public GLFCameraWindow {
 		glfwSetCursorPosCallback(handle, glfwindow_mouseMotion_cb);
 
 		bool my_tool_active = true;
+		int frameCounter = 0;
 
 		while (!glfwWindowShouldClose(handle)) {
 			render();
@@ -107,6 +108,7 @@ struct MyWindow : public GLFCameraWindow {
 								cout << "File path error!" << endl;
 								exit(1);
 							}
+							glfwSetWindowSize(handle, parser.width, parser.height);
 							cameraFrame.motionSpeed = parser.worldScale;
 							cameraFrame.setOrientation(parser.camera.from, parser.camera.at, parser.camera.up);
 							renderer = Renderer(&scene);
@@ -114,6 +116,7 @@ struct MyWindow : public GLFCameraWindow {
 							camera_medium = parser.camera.medium;
 							change_camera = false;
 							resize(vec2i(parser.width, parser.height));
+							frameCounter = 0;
 						}
 					}
 					if (ImGui::MenuItem("Save Image")) {
@@ -140,7 +143,11 @@ struct MyWindow : public GLFCameraWindow {
 					renderer.launchParams.numPixelSamples = 1;
 				}
 			}
-			ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io->Framerate, io->Framerate);
+			ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io->Framerate, io->Framerate); ImGui::SameLine();
+			ImGui::Text("SPP: %ld", frameCounter);
+			if (renderer.progressive) {
+				frameCounter += renderer.launchParams.numPixelSamples;
+			}
 			ImGui::Image((void*)(intptr_t)fbTexture, ImVec2(fbSize.x, fbSize.y), ImVec2(0, 1), ImVec2(1, 0));
 			ImGui::End();
 
