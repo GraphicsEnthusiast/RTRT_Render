@@ -1,0 +1,981 @@
+{
+    "width": 1280,
+    "height": 720,
+    "camera": {
+        "look_from": [ 2, 2, 3 ],
+        "up": [ 0, 1, 0 ]
+    },
+    "light": [
+        {
+            "type": "sphere",
+            "center": [ 0.2, 2.204, -1.625 ],
+            "radius": 0.173,
+            "radiance": [ 17, 12, 8 ]
+        }
+    ],
+    "mesh": [
+        {
+            "mesh_path": "../../scene/kitchen/model/BookPages.obj",
+            "material": "BookPages",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/ChoppingKnifeBlade.obj",
+            "material": "ChoppingKnifeBlade",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/ChoppingKnifeEdge.obj",
+            "material": "ChoppingKnifeEdge",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/ChoppingKnifeHandle.obj",
+            "material": "ChoppingKnifeHandle",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/ChromeHandle.obj",
+            "material": "ChromeHandle",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/CookerBlack.obj",
+            "material": "CookerBlack",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/CupboardUnits.obj",
+            "material": "CupboardUnits",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/CupboardUnits2.obj",
+            "material": "CupboardUnits",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/ExtractorHood.obj",
+            "material": "ExtractorHood",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Cushion.obj",
+            "material": "Cushion",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Floor.obj",
+            "material": "Floor",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/KettleGreen.obj",
+            "material": "KettleGreen",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/MetalHandles.obj",
+            "material": "MetalHandles",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/LeftPage.obj",
+            "material": "LeftPage",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Pepper-Green.obj",
+            "material": "Pepper-Green",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Pepper-Red.obj",
+            "material": "Pepper-Red",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Pepper-Yellow.obj",
+            "material": "Pepper-Yellow",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Plates.obj",
+            "material": "Plates",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/RadioHandle.obj",
+            "material": "RadioHandle",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/SmallWorktop.obj",
+            "material": "SmallWorktop",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/SteelPot.obj",
+            "material": "SteelPot",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/TableCross.obj",
+            "material": "TableCross",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Tabletop.obj",
+            "material": "Tabletop",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Tiles.obj",
+            "material": "Tiles",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Tomatoes.obj",
+            "material": "Tomatoes",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Utensils.obj",
+            "material": "Utensils",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Walls.obj",
+            "material": "Walls",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/WhitePot.obj",
+            "material": "WhitePot",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/WineGlasses.obj",
+            "material": "WineGlasses",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Worktops.obj",
+            "material": "Worktops",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Window.obj",
+            "material": "Window",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Lamp.obj",
+            "material": "Lamp",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Lamp2.obj",
+            "material": "CookerBlack",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Microwave.obj",
+            "material": "Microwave",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/MicrowaveGlass.obj",
+            "material": "MicrowaveGlass",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/MicrowaveBack.obj",
+            "material": "CookerBlack",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/MetalCover.obj",
+            "material": "SteelPot",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Handle.obj",
+            "material": "Handle",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Cooking.obj",
+            "material": "Cooking",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Socket.obj",
+            "material": "Socket",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Button.obj",
+            "material": "SteelPot",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/RadioEdges.obj",
+            "material": "SteelPot",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/RadioSurround.obj",
+            "material": "Cooking",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/RadioSurround.obj",
+            "material": "Cooking",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/RadioPlastic.obj",
+            "material": "RadioPlastic",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Steel.obj",
+            "material": "SteelPot",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Steel2.obj",
+            "material": "SteelPot",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Steel3.obj",
+            "material": "SteelPot",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/RadioGlass.obj",
+            "material": "RadioGlass",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/RadioDialBack.obj",
+            "material": "RadioDialBack",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/BreadBinSides.obj",
+            "material": "BreadBinSides",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Towel.obj",
+            "material": "Towel",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/ChoppingBoard.obj",
+            "material": "ChoppingBoard",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/TableMats.obj",
+            "material": "Cooking",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Tableware.obj",
+            "material": "Tableware",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/BookCover.obj",
+            "material": "Cooking",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Carrots.obj",
+            "material": "Carrots",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/Mushrooms.obj",
+            "material": "Mushrooms",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/PepperStems.obj",
+            "material": "PepperStems",
+            "medium_int": "",
+            "medium_ext": ""
+        },
+        {
+            "mesh_path": "../../scene/kitchen/model/SlicedMushroms.obj",
+            "material": "SlicedMushroms",
+            "medium_int": "",
+            "medium_ext": ""
+        }
+    ],
+    "material": [
+        {
+            "type": "plastic",
+            "name": "Tableware",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.9, 0.9, 0.9 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "BreadBinSides",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/kitchen/texture/Worktopt-light.jpg",
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "BookPages",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/kitchen/texture/Kitchen-bookpage-large.jpg",
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "conductor",
+            "name": "ChoppingKnifeBlade",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.751534, 0.751534, 0.751534 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "eta": [ 4.36968, 2.9167, 1.6547 ],
+            "k": [ 5.20643, 4.23136, 3.75495 ]
+        },
+        {
+            "type": "conductor",
+            "name": "Microwave",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.578596, 0.578596, 0.578596 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "eta": [ 1.65746, 0.880369, 0.521229 ],
+            "k": [ 9.22387, 6.26952, 4.837 ]
+        },
+        {
+            "type": "conductor",
+            "name": "ChoppingKnifeEdge",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.751534, 0.751534, 0.751534 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.15,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "eta": [ 1.65746, 0.880369, 0.521229 ],
+            "k": [ 9.22387, 6.26952, 4.837 ]
+        },
+        {
+            "type": "plastic",
+            "name": "ChoppingKnifeHandle",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.028991, 0.028991, 0.028991 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "RadioPlastic",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.64, 0.600153, 0.43449 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "ChoppingKnifeHandle",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.015396, 0.015396, 0.015396 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.12,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "conductor",
+            "name": "ExtractorHood",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.751534, 0.751534, 0.751534 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "eta": [ 4.36968, 2.9167, 1.6547 ],
+            "k": [ 5.20643, 4.23136, 3.75495 ]
+        },
+        {
+            "type": "plastic",
+            "name": "KettleGreen",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.0399472, 0.14198, 0.0033027 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.12,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "LeftPage",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/kitchen/texture/Kitchen-book-leftpage.jpg",
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "conductor",
+            "name": "MetalHandles",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.510193, 0.510193, 0.510193 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "eta": [ 4.36968, 2.9167, 1.6547 ],
+            "k": [ 5.20643, 4.23136, 3.75495 ]
+        },
+        {
+            "type": "plastic",
+            "name": "Pepper-Green",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.0302565, 0.197516, 0 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "Pepper-Yellow",
+            "albedo_texture_type": "constant",
+            "albedo": [ 1, 0.20471, 0 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "Pepper-Red",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.476177, 0, 0 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "Plate",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.578596, 0.578596, 0.578596 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.05,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "SmallWorktop",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/kitchen/texture/Worktopt-light.jpg",
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.05,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "conductor",
+            "name": "SteelPot",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.510193, 0.510193, 0.510193 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "eta": [ 1.65746, 0.880369, 0.521229 ],
+            "k": [ 9.22387, 6.26952, 4.837 ]
+        },
+        {
+            "type": "plastic",
+            "name": "Tabletop",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/kitchen/texture/Tabletop-light.jpg",
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.15,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "Plate",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.592438, 0, 0.00293232 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.2,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "conductor",
+            "name": "Utensils",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.510193, 0.510193, 0.510193 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "eta": [ 4.36968, 2.9167, 1.6547 ],
+            "k": [ 5.20643, 4.23136, 3.75495 ]
+        },
+        {
+            "type": "plastic",
+            "name": "WhitePot",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.578596, 0.578596, 0.578596 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.3,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "dielectric",
+            "name": "WineGlasses",
+            "albedo_texture_type": "constant",
+            "albedo": [ 1, 1, 1 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0
+        },
+        {
+            "type": "thin_dielectric",
+            "name": "RadioGlass",
+            "albedo_texture_type": "constant",
+            "albedo": [ 1, 1, 1 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0
+        },
+        {
+            "type": "dielectric",
+            "name": "MicrowaveGlass",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.2, 0.2, 0.2 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0
+        },
+        {
+            "type": "plastic",
+            "name": "Worktops",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/kitchen/texture/Worktopt-light.jpg",
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.2,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "diffuse",
+            "name": "ChromeHandle",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.64, 0.64, 0.64 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "plastic",
+            "name": "CookerBlack",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.015396, 0.015396, 0.015396 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.15,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "TableCross",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.612066, 0.612066, 0.612066 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "Tomatoes",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.592438, 0, 0.00293232 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "diffuse",
+            "name": "CookerBlack",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.64, 0.64, 0.64 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "diffuse",
+            "name": "CupboardUnits",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.54, 0.54, 0.54 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "diffuse",
+            "name": "Cushion",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/kitchen/texture/cushion-red.jpg",
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "plastic",
+            "name": "Floor",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/kitchen/texture/wood.jpg",
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.15,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "plastic",
+            "name": "ChoppingBoard",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/kitchen/texture/Chopping-Board.jpg",
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.15,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        },
+        {
+            "type": "diffuse",
+            "name": "RadioHandle",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.389509, 0.372589, 0.293747 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "diffuse",
+            "name": "PepperStems",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.136099, 0.284452, 0.00552174 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "diffuse",
+            "name": "Tiles",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.394083, 0.325037, 0.263175 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.2
+        },
+        {
+            "type": "diffuse",
+            "name": "Walls",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.9, 0.9, 0.8 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.2
+        },
+        {
+            "type": "diffuse",
+            "name": "Window",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.6, 0.6, 0.6 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.15
+        },
+        {
+            "type": "diffuse",
+            "name": "Handle",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.1, 0.1, 0.1 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.3
+        },
+        {
+            "type": "diffuse",
+            "name": "Cooking",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.2, 0.2, 0.2 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.3
+        },
+        {
+            "type": "diffuse",
+            "name": "Mushrooms",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.300837, 0.281435, 0.243189 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.1
+        },
+        {
+            "type": "diffuse",
+            "name": "Socket",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.8, 0.85, 0.88 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.0
+        },
+        {
+            "type": "diffuse",
+            "name": "Towel",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/kitchen/texture/Tea-Towel.jpg",
+            "roughness_texture_type": "constant",
+            "roughness": 0.0
+        },
+        {
+            "type": "diffuse",
+            "name": "SlicedMushroms",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/kitchen/texture/Kitchen-mushroom-texture.png",
+            "roughness_texture_type": "constant",
+            "roughness": 0.0
+        },
+        {
+            "type": "diffuse",
+            "name": "RadioDialBack",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/kitchen/texture/radio-dial-idea.jpg",
+            "roughness_texture_type": "constant",
+            "roughness": 0.0
+        },
+        {
+            "type": "diffuse",
+            "name": "Carrots",
+            "albedo_texture_type": "image",
+            "albedo_path": "../../scene/kitchen/texture/Kitchen-carrot-uv.png",
+            "roughness_texture_type": "constant",
+            "roughness": 0.0
+        },
+        {
+            "type": "plastic",
+            "name": "Lamp",
+            "albedo_texture_type": "constant",
+            "albedo": [ 0.541798, 0.297653, 0.0528416 ],
+            "specular_texture_type": "constant",
+            "specular": [ 1.0, 1.0, 1.0 ],
+            "roughness_texture_type": "constant",
+            "roughness": 0.3,
+            "anisotropy_texture_type": "constant",
+            "anisotropy": 0.0,
+            "int_ior": 1.5,
+            "ext_ior": 1.0,
+            "nonlinear": true
+        }
+    ]
+}

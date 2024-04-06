@@ -82,7 +82,7 @@ void SceneParser::ParseLight(const json& data, Scene& scene) {
 			vec3f v(v_j.at(0), v_j.at(1), v_j.at(2));
 			cout << "v: " << v.x << "   " << v.y << "   " << v.z << "   " << endl;
 
-			json radiance_j = light.value("pos", json());
+			json radiance_j = light.value("radiance", json());
 			vec3f radiance(radiance_j.at(0), radiance_j.at(1), radiance_j.at(2));
 			cout << "radiance: " << radiance.x << "   " << radiance.y << "   " << radiance.z << "   " << endl;
 
@@ -104,7 +104,7 @@ void SceneParser::ParseLight(const json& data, Scene& scene) {
 			float radius = light.value("radius", 0.0f);
 			cout << "radius: " << radius << endl;
 
-			json radiance_j = light.value("pos", json());
+			json radiance_j = light.value("radiance", json());
 			vec3f radiance(radiance_j.at(0), radiance_j.at(1), radiance_j.at(2));
 			cout << "radiance: " << radiance.x << "   " << radiance.y << "   " << radiance.z << "   " << endl;
 
