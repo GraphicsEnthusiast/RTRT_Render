@@ -218,7 +218,9 @@ void HdrTexture::CalculateHdrCache() {
 	float lumSum = 0.0f;
 
 	std::vector<std::vector<float>> pdf(height);
-	for (auto& line : pdf) line.resize(width);
+	for (auto& line : pdf) {
+		line.resize(width);
+	}
 	for (int i = 0; i < height; i++) {
 		for (int j = 0; j < width; j++) {
 			float R = hdr[comp * (i * width + j)];
